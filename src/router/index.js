@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Hi from '@/components/Hi'
 
+import count from '@/components/count'
 Vue.use(Router)
 
 export default new Router({
@@ -16,6 +17,11 @@ export default new Router({
       path: '/hi',
       name: 'Hi',
       component: Hi
+    },
+    {
+      path: '/count',
+      name: 'count',
+      component: count
     }
   ]
 })
